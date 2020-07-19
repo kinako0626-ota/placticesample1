@@ -1,0 +1,16 @@
+Firestoreのドキュメント読みつつ作業
+
+users:
+  documentID: userID
+  name: String?
+  iconURL: String?
+  createdAt: Date
+
+
+todo:
+  documentID: auto
+
+  title: String
+  isCompleted: Bool
+  completedAt: Date?
+  createdAt: Date
