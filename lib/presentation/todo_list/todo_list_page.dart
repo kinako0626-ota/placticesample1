@@ -6,10 +6,10 @@ class BookList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('本一覧'),
+        title: Text('TODO一覧'),
       ),
       body: StreamBuilder<QuerySnapshot>(
-        stream: Firestore.instance.collection('books').snapshots(),
+        stream: Firestore.instance.collection('todos').snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           return ListView(
             children: snapshot.data.documents.map((DocumentSnapshot document) {
