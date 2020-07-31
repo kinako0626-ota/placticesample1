@@ -10,3 +10,12 @@ class Todo {
   String documentID;
   String title;
 }
+
+class NotificationData {
+  NotificationData({this.title, this.text, this.date, this.imageURL});
+  final String title;
+  final String text;
+
+  final DateTime date;
+  final String imageURL;
+}

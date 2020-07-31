@@ -20,9 +20,6 @@ class AddTodoPage extends StatelessWidget {
     return ChangeNotifierProvider<AddTodoModel>(
       create: (_) => AddTodoModel(),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(isUpdeate ? 'TODOを編集' : 'TODOを追加'),
-        ),
         body: Consumer<AddTodoModel>(
           builder: (context, model, child) {
             return Padding(
